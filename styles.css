@@ -50,3 +50,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Norsebold';
   src: url(Fonts/Norsebold.ttf);
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.art {
+  background-image: url(Images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 40%;
+}
+
+.content {
+  min-width: 60%;
+}
