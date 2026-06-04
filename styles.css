@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: 'Norsebold';
-  src: url(Fonts/Norsebold.ttf);
+  font-family: 'NordicaThin';
+  src: url(Fonts/NordicaThin.ttf);
 }
 
 .container {
@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 60%;
   display: flex;
   flex-direction: column;
+  padding-left: 3%;
 }
 
 .title {
@@ -132,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .message {
   min-height: 30%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
 }
 
 .details {
@@ -142,4 +147,60 @@ h1, h2, h3, h4, h5, h6 {
 
 .create {
   min-height: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.opening {
+  min-height: 20%;
+}
+
+.form {
+  min-height: 80%;
+}
+
+.message > p, .opening > p, .button > button{
+  font-family: NordicaThin;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.message > p:last-child {
+  padding-top: 20px;
+}
+
+.log-in > p, a {
+  font-family: NordicaThin;
+  font-size: 16px;
+}
+
+.log-in {
+  display: flex;
+  gap: 7px;
+}
+
+.button {
+  min-height: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.button > button {
+  padding: 1% 4%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #905C2C;
+}
+
+.log-in a {
+  text-decoration: none;
+}
+
+.log-in a:link {
+  color: #905C2C;
+}
+
+.log-in a:visited {
+  color: #764422;
 }
