@@ -62,8 +62,59 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content {
   min-width: 60%;
+}
+
+.title {
+  min-height: 15%;
+  position: relative;
+  top: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.attribute {
+  min-height: 5%;
+  position: relative;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  min-width: 15%;
+  max-width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  min-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading > h1 {
+  font-family: Norse;
+  color: white;
+  font-size: 90px;
+}
+
+.logo > img { 
+  height: 90%;
+  width: 90%;
+}
+
+.attribute > p {
+  color: white;
+  font-size: 17px;
 }
