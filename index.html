@@ -45,16 +45,50 @@
           <div class="opening">
             <p>Let's do this !</p>
           </div>
-          <div class="form">
-            <form action="">
-              <div class="left"></div>
-              <div class="right"></div>
-            </form>
-          </div>
+          <form action="" id="details-form">
+            <div class="left">
+              <div class="input-row">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" required />
+              </div>
+              <div class="input-row">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="input-row">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+            </div>
+            <div class="right">
+              <div class="input-row">
+                <label for="last-name">LAST NAME</label
+                ><input type="text" name="last-name" id="last-name" required />
+              </div>
+              <div class="input-row">
+                <label for="phone-number">PHONE NUMBER</label
+                ><input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                />
+              </div>
+              <div class="input-row">
+                <label for="confirm-password">CONFIRM PASSWORD</label
+                ><input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
         </div>
         <div class="create">
           <div class="button">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="details-form">Create Account</button>
           </div>
           <div class="log-in">
             <p>Already have an account?</p>

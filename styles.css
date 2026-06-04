@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 60%;
   display: flex;
   flex-direction: column;
-  padding-left: 3%;
 }
 
 .title {
@@ -137,26 +136,34 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center ;
+  padding-left: 60px;
 }
 
 .details {
   min-height: 35%;
   display: flex;
   flex-direction: column;
+  padding-left: 60px;
+  box-shadow: 0 5px 15px #12130D;
 }
 
 .create {
   min-height: 35%;
   display: flex;
   flex-direction: column;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 .opening {
   min-height: 20%;
+  display: flex;
+  align-items: center;
 }
 
-.form {
+form {
   min-height: 80%;
+  display: flex;
 }
 
 .message > p, .opening > p, .button > button{
@@ -169,9 +176,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
-.log-in > p, a {
+.log-in > p, a, .input-row > label, input{
   font-family: NordicaThin;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .log-in {
@@ -203,4 +211,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .log-in a:visited {
   color: #764422;
+}
+
+.left {
+  min-width: 40%;
+}
+
+.right {
+  min-width: 40%;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.input-row > label {
+  font-weight: normal;  
+}
+
+.input-row > input {
+  font-weight: lighter;
+  border: lightgray solid 1px;
+  border-radius: 5px;
+}
+
+.input-row > input[type='password']:user-invalid {
+  border-color: red;
+}
+
+.input-row > input:focus{
+  border-color: blue;
+  outline: none;
+  box-shadow: 0 0 3px #12130D; 
 }
