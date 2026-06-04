@@ -69,6 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
   min-width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -126,4 +128,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .attribute a:visited {
   color: lightgray;
+}
+
+.message {
+  min-height: 30%;
+}
+
+.details {
+  min-height: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create {
+  min-height: 35%;
 }
